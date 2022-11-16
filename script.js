@@ -11,10 +11,19 @@ function loadData(){
   author.innerHTML = Author;
   quote.innerHTML = text;
 })
+updateLocalStorage();
 }
 button.addEventListener('click', loadData);
 
 
+function getQoute() {
+  if(localStorage.getItem("qoute")) {
+    const qouteElement = localStorage.getItem("qoute");
+    todos = JSON.parse(qouteElement);
+  }  
+}
+     getQoute();
+     loadData()
 
 
 
