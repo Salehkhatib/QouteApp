@@ -1,27 +1,36 @@
 *{
-    
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
+body{
+    background-color: rgb(255, 244, 232);
+}
 header{
     
     text-align: center;
     
     height: 100px;
     width: 100%;
-    background-color: aliceblue;
+    background-color: rgb(36, 117, 187);
    
 }
-button{
-    background-color: rgb(49, 49, 211);
+#button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(49, 211, 208);
     color: white;
     width: 120px;
     height: 50px;
     border-radius: 10px ;
-    margin-left: 80%;
-    margin-bottom: 30px;
+    border: none;
+}
+
+#button:active{
+    border: 2px solid blue;
+    box-shadow: 2px 4px blue;
 }
 article{
     text-align: center;
@@ -29,4 +38,9 @@ article{
 }
 #author{
     margin-top: 30px;
+}
+
+div{
+    display: flex;
+    justify-content: end;
 }
