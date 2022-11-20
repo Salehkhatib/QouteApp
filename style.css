@@ -41,6 +41,9 @@ h1 {
 article {
   text-align: center;
   margin-top: 30px;
+  font-style: oblique;
+  background: none;
+  background-color: transparent;
 }
 #author {
   margin-top: 30px;
@@ -49,4 +52,8 @@ article {
 div {
   display: flex;
   justify-content: end;
+}
+
+article {
+  background-color: transparent;
 }
